@@ -39,7 +39,3 @@ export const createRequest = (options = {}) => {
     callback(e, null);
   }
 };
-
-  
-
-  

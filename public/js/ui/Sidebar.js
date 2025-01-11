@@ -42,33 +42,23 @@ class Sidebar {
     const registerButton = document.querySelector(".menu-item_register");
     const logoutButton = document.querySelector(".menu-item_logout");
 
-    if (loginButton) {
-      loginButton.addEventListener("click", (event) => {
-        event.preventDefault();
-        const loginModal = App.getModal("login");
-        if (loginModal) loginModal.open();
+    loginButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      App.getModal("login").open();
+    });
+  
+    registerButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      App.getModal("register").open();
+    });
+  
+    logoutButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      User.logout((err, response) => {
+        if (response && response.success) {
+          App.setState("init");
+        }
       });
-    }
-
-    if (registerButton) {
-      registerButton.addEventListener("click", (event) => {
-        event.preventDefault();
-        const registerModal = App.getModal("register");
-        if (registerModal) registerModal.open();
-      });
-    }
-
-    if (logoutButton) {
-      logoutButton.addEventListener("click", (event) => {
-        event.preventDefault();
-        User.logout((err, response) => {
-          if (response && response.success) {
-            App.setState("init");
-          }
-        });
-      });
-    }
+    });
   }
-  }
-
-
+}
