@@ -3,7 +3,7 @@
  * Управляет счетами пользователя.
  * Имеет свойство URL со значением '/account'
  * */
-import { Entity } from './Entity.js';
+
 class Account extends Entity {
   /**
    * Получает информацию о счёте
