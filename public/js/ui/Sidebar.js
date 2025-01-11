@@ -18,20 +18,14 @@ class Sidebar {
    * при нажатии на кнопку .sidebar-toggle
    * */
   static initToggleButton() {
-    const toggleButton = document.querySelector(".sidebar-toggle"); 
-    const body = document.body; 
+    const toggleButton = document.querySelector(".sidebar-toggle");
+    const body = document.body;
 
-    if (toggleButton) { 
+    if (toggleButton) {
       toggleButton.addEventListener("click", (event) => {
-        event.preventDefault(); 
-       
-        if (body.classList.contains("sidebar-open")) {
-          body.classList.remove("sidebar-open");
-          body.classList.add("sidebar-collapse");
-        } else {
-          body.classList.remove("sidebar-collapse");
-          body.classList.add("sidebar-open");
-        }
+        event.preventDefault();
+        body.classList.toggle("sidebar-open");
+        body.classList.toggle("sidebar-collapse");
       });
     }
   }
@@ -76,5 +70,5 @@ class Sidebar {
     }
   }
   }
-//так и не газобрался, почему не работает гамбургер 
+
 
