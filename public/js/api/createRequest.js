@@ -22,11 +22,7 @@ const createRequest = (options = {}) => {
   xhr.responseType = 'json';
 
   xhr.onload = () => {
-    if (xhr.status >= 200 && xhr.status < 300) {
-      callback(null, xhr.response);
-    } else {
-      callback(new Error(`HTTP Error: ${xhr.status}`), null);
-    }
+    callback(null, xhr.response);
   };
 
   xhr.onerror = () => {
