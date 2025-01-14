@@ -27,11 +27,16 @@ class UserWidget {
    * */
   update(){
     const currentUser = User.current();
-    if (currentUser) {
-      const userNameElement = this.element.querySelector(".user-name");
-      if (userNameElement) {
+    const userNameElement = this.element.querySelector(".user-name");
+
+    if (userNameElement) {
+      if (currentUser) {
         userNameElement.textContent = currentUser.name;
+      } else {
+        userNameElement.textContent = ""; 
       }
+    } else {
+      console.warn("Элемент .user-name не найден в UserWidget");
     }
   }
 }
