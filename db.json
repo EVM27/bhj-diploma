@@ -191,6 +191,24 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "j4ux92om5x0c8tr",
+      "type": "income",
+      "name": "биржа",
+      "sum": 15000,
+      "account_id": "j4ux4f0m5wzq32b",
+      "user_id": "j4uxc4km5wzeadi",
+      "created_at": "2025-01-14T21:51:16.910Z"
+    },
+    {
+      "id": "j4ux4dwm5x0cow1",
+      "type": "expense",
+      "name": "биржа",
+      "sum": 100,
+      "account_id": "j4ux4f0m5wzq32b",
+      "user_id": "j4uxc4km5wzeadi",
+      "created_at": "2025-01-14T21:51:37.728Z"
     }
   ]
 }
