@@ -48,12 +48,7 @@
     {
       "name": "Sky’s Beyond",
       "user_id": "j4uxc4km5wzeadi",
-      "id": "j4uxbkgm5wzqhv3"
-    },
-    {
-      "name": "Увгений",
-      "user_id": "j4uxc4km5wzeadi",
-      "id": "j4ux5l0m5wzsei4"
+      "id": "j4uxdlkm5ydinbm"
     }
   ],
   "transactions": [
@@ -209,6 +204,33 @@
       "account_id": "j4ux4f0m5wzq32b",
       "user_id": "j4uxc4km5wzeadi",
       "created_at": "2025-01-14T21:51:37.728Z"
+    },
+    {
+      "id": "j4uxcoom5ydivg6",
+      "type": "income",
+      "name": "биржа",
+      "sum": 300000,
+      "account_id": "j4ux4f0m5wzq32b",
+      "user_id": "j4uxc4km5wzeadi",
+      "created_at": "2025-01-15T20:48:07.349Z"
+    },
+    {
+      "id": "j4ux7zgm5ydj769",
+      "type": "income",
+      "name": "биржа",
+      "sum": 100,
+      "account_id": "j4ux4f0m5wzq32b",
+      "user_id": "j4uxc4km5wzeadi",
+      "created_at": "2025-01-15T20:48:22.544Z"
+    },
+    {
+      "id": "j4ux6skm5ydjsz4",
+      "type": "expense",
+      "name": "биржа",
+      "sum": 300000,
+      "account_id": "j4uxdlkm5ydinbm",
+      "user_id": "j4uxc4km5wzeadi",
+      "created_at": "2025-01-15T20:48:50.799Z"
     }
   ]
 }
