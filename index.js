@@ -14,7 +14,7 @@ const FileSync = require('lowdb/adapters/FileSync', {
 const db = low(new FileSync('db.json'));
 if(!db.get('users').value())
     setDefaultUser(db);
-
+//
 const app = express();
 app.use(express.static(`${__dirname}/${PUBLIC_PATH}`));
 
